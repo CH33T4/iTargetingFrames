@@ -9,7 +9,6 @@
 embeds.xml
 locales.xml
 auraBlacklist.lua
-crowdControl.lua
 rangeSpells.lua
 priorityNPCs.lua
 layouts.lua
