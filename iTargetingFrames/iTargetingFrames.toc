@@ -2,7 +2,8 @@
 ## Title: iTargetingFrames
 ## Notes: iTargetingFrames
 ## Author: Ironi
-## Version: 0.9
+## Backport: Cheeta
+## Version: 0.1
 ## DefaultState: enabled
 ## SavedVariables: iTFConfig
 
