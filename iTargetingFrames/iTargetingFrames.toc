@@ -1,0 +1,18 @@
+## Interface: 30300
+## Title: iTargetingFrames
+## Notes: iTargetingFrames
+## Author: Ironi
+## Version: 0.9
+## DefaultState: enabled
+## SavedVariables: iTFConfig
+
+embeds.xml
+locales.xml
+auraBlacklist.lua
+crowdControl.lua
+rangeSpells.lua
+priorityNPCs.lua
+layouts.lua
+customConditionalTemplates.lua
+options.lua
+iTargetingFrames.lua
