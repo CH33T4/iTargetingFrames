@@ -19,7 +19,7 @@ function(unitID, data)
 end]]
 templates['Magic buff'] = [[
 function(unitID, data)
-    for i = 1, 60 do
+    for i = 1, 40 do
         if UnitBuff(unitID, i) then
             local _,_,_,_,buffType = UnitBuff(unitID, i)
             if buffType and buffType == 'Magic' then
