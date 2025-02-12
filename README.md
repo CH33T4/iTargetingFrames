@@ -52,4 +52,4 @@ Use /itf or /itargetingframes to open config window.
 # How to install the addon
 1. Download the addon from the **main** repository. [[Download](https://github.com/CH33T4/iTargetingFrames/archive/refs/heads/main.zip)]
 2. Open the Zip package and copy (Ctrl+C) the `iTargetingFrames` folder over to your addons folder (Interface/Addons). 
-3. Download and Install AwesomeWotlk-Patch (https://github.com/FrostAtom/awesome_wotlk) and replace dll with modified AwesomeWotlkLib.dll.
+3. Download and Install AwesomeWotlk-Patch (https://github.com/FrostAtom/awesome_wotlk) and replace DLL with modified AwesomeWotlkLib.dll.
