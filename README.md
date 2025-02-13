@@ -2,7 +2,7 @@
 Displays nameplate units in a clickable grid. Backport for WotLK (3.3.5a) from [Retail Addon by Ironi](https://www.curseforge.com/wow/addons/itargetingframes). 
 
 Requires a patched client with AwesomeWotlkLib.dll for Retail Nameplate API (https://github.com/FrostAtom/awesome_wotlk). 
-If units are shown more than once, you need the modified DDL-file with fixed nameplate units from this repository.
+If units are shown more than once, you need the modified DLL-file with fixed nameplate units from this repository.
 
 Use /itf or /itargetingframes to open config window.
 
