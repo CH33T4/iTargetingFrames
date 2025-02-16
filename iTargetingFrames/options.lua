@@ -970,6 +970,16 @@ function optionFuncs.getOptions()
 						iTF:updateNameplateStateDrivers(true)
 					end,
 					get = function() return iTFConfig.layout.onlyShowInCombat end
+				},
+				invertGrow = {
+					name = 'Invert Grow Order',
+					type = 'toggle',
+					order = 16,
+					set = function(val)
+						iTFConfig.layout.invertGrow = val
+						iTF:updateFrames('pos')
+					end,
+					get = function() return iTFConfig.layout.invertGrow end
 				}
 			},
 			subGroups = {
