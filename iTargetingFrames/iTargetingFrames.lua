@@ -1115,13 +1115,25 @@ function iTF:CreateAuraFrame(unitID, id)
 
 end
 function iTF:getUFPos(id)
-	local r = id%iTFConfig.layout.colS
-	local x = math.floor(id/iTFConfig.layout.colS)*(iTFConfig.layout.frame.width+iTFConfig.layout.frame.hspacing)
-	local y = (r-1)*(iTFConfig.layout.frame.height+iTFConfig.layout.frame.vspacing)
+	local r = id % iTFConfig.layout.colS 
+	local x = 0
+	local y = 0
+	if iTFConfig.layout.invertGrow then
+		y = math.floor(id / iTFConfig.layout.colS) * (iTFConfig.layout.frame.height + iTFConfig.layout.frame.vspacing)
+		x = (r - 1) * (iTFConfig.layout.frame.width + iTFConfig.layout.frame.hspacing)
 	
-	if r == 0 then
-		x = (math.floor(id/iTFConfig.layout.colS)-1)*(iTFConfig.layout.frame.width+iTFConfig.layout.frame.hspacing)
-		y = (iTFConfig.layout.colS-1)*(iTFConfig.layout.frame.height+iTFConfig.layout.frame.vspacing)
+		if r == 0 then
+			y = (math.floor(id / iTFConfig.layout.colS) - 1) * (iTFConfig.layout.frame.height + iTFConfig.layout.frame.vspacing)
+			x = (iTFConfig.layout.colS - 1) * (iTFConfig.layout.frame.width + iTFConfig.layout.frame.hspacing)
+		end
+	else
+		x = math.floor(id / iTFConfig.layout.colS) * (iTFConfig.layout.frame.width + iTFConfig.layout.frame.hspacing)
+		y = (r - 1) * (iTFConfig.layout.frame.height + iTFConfig.layout.frame.vspacing)
+	
+		if r == 0 then
+			x = (math.floor(id / iTFConfig.layout.colS) - 1) * (iTFConfig.layout.frame.width + iTFConfig.layout.frame.hspacing)
+			y = (iTFConfig.layout.colS - 1) * (iTFConfig.layout.frame.height + iTFConfig.layout.frame.vspacing)
+		end
 	end
 	if iTFConfig.layout.grow == 'TOPRIGHT' then
 		return -x, -y
